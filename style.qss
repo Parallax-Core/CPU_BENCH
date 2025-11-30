@@ -1,0 +1,93 @@
+/--- APPLICATION WIDE STYLES ---/
+QMainWindow {
+background-color: #1a1a1a;
+}
+QWidget {
+color: #f0f0f0;
+}
+
+/--- CENTRAL CARD STYLING ---/
+#CentralCard {
+background-color: #2b2b2b;
+border: 1px solid #3e3e3e;
+border-radius: 12px;
+padding: 20px;
+/* REMOVED ALL UNSUPPORTED BOX-SHADOW PROPERTIES */
+}
+
+/--- BUTTONS (Flashy Accents) ---/
+QPushButton {
+background-color: #0097a7;
+color: #ffffff;
+border: 2px solid #00bcd4;
+padding: 10px 20px;
+border-radius: 5px;
+}
+QPushButton:hover {
+background-color: #00bcd4;
+}
+QPushButton:pressed {
+background-color: #007985;
+}
+
+/--- TEXT INPUTS & READOUTS ---/
+QLineEdit, QTextEdit {
+background-color: #3c3c3c;
+border: 1px solid #5a5a5a;
+padding: 5px;
+border-radius: 3px;
+color: #ffffff;
+}
+
+/--- LABELS AND HEADERS ---/
+QLabel {
+color: #f0f0f0;
+}
+QTabWidget::pane {
+border-top: 2px solid #0097a7;
+}
+
+/--- TABS ---/
+QTabBar::tab {
+background: #3e3e3e;
+color: #cccccc;
+padding: 8px 15px;
+border-top-left-radius: 4px;
+border-top-right-radius: 4px;
+border: none;
+}
+QTabBar::tab:selected {
+background: #1a1a1a;
+color: #00bcd4;
+font-weight: bold;
+border-bottom: 3px solid #00bcd4;
+}
+
+/--- COMBO BOX ---/
+QComboBox {
+background-color: #3c3c3c;
+border: 1px solid #5a5a5a;
+padding: 5px;
+border-radius: 3px;
+}
+QComboBox::drop-down {
+subcontrol-origin: padding;
+subcontrol-position: top right;
+width: 20px;
+border-left-width: 1px;
+border-left-color: #5a5a5a;
+border-left-style: solid;
+border-top-right-radius: 3px;
+border-bottom-right-radius: 3px;
+}
+QComboBox::down-arrow {
+image: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNCAyNCI+PHBhdGggZmlsbD0iIzAwYmNkNCIgZD0iTTEyIDExLjVsNCA0IDQtNGgtOG0tOC0yLjV2OC41aDE2VjloLTVsLTUtMi41Ii8+PC9zdmc+);
+width: 10px;
+height: 10px;
+}
+QComboBox QAbstractItemView {
+background: #3c3c3c;
+border: 1px solid #00bcd4;
+selection-background-color: #00bcd4;
+selection-color: #000000;
+}
